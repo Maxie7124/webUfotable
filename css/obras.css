@@ -1,0 +1,429 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: system-ui;
+
+    font-weight: 600;
+
+    list-style: none;    
+
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url(../imagenes/fatecel.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    min-height: 220vh;
+    grid-template-rows: auto 1fr auto ;
+
+
+}
+
+nav a:hover{
+    background-color: rgb(76, 0, 255);
+    
+}
+.log{
+    text-align: center;
+    padding: 12px 0;
+    
+}
+ul{
+    background-color: #0e0e0e;
+}
+
+nav a{
+    display: block;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul{
+    gap: 0 35px;
+
+    font-size: 1rem;
+}
+nav{
+    background: #111;
+}
+.lista{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+.lista select{
+    background-color: aqua;
+}
+.ax{
+    border-radius: 25px;
+    width: 85%;
+    height: 90%;
+    box-shadow: 0px 0px 30px #0caeee;  
+    transition: .9s;
+    margin: 35px;
+    padding: 0.5em;
+    cursor: pointer;
+ 
+}
+.auto{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(250px, 0.9fr)
+    );
+    gap: 32px;
+    padding: 45px;
+}
+.auto2{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(250px, 0.9fr)
+    );
+    gap: 32px;
+    padding: 50px;
+}
+.auto3{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(250px, 0.9fr)
+    );
+    gap: 32px;
+    padding: 50px;
+}
+.auto4{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(250px, 0.9fr)
+    );
+    gap: 32px;
+    padding: 50px;
+}
+.ax:hover{
+    transform: scale(0.9);
+}
+footer{
+    
+    width: 100%;
+
+    position: flex;
+
+    bottom: 0;
+
+    left: 0;
+
+    padding: 0.5rem 8%;
+
+    background: #0e0e0e;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+   
+
+}
+a{
+   text-decoration: none;
+   color: rgb(233, 13, 159);
+}
+.iconos, .menu{
+
+   display: flex;
+
+   justify-content: center;
+
+   align-items: center;
+
+   flex-wrap: wrap;
+
+   margin-bottom: 1rem;
+
+  
+}
+.menu{
+
+   list-style-type: none;
+
+   font-size: 15px;
+   
+
+}
+
+.menu-item{
+
+   margin: 1rem 1.5rem;
+
+   cursor: pointer;
+
+   opacity: 0.6;
+   
+
+}
+.logo{
+    width: 220px;
+}
+
+.menu-item:hover{
+
+   opacity: 1;
+
+}
+
+.copy{
+
+   color: rgb(255, 255, 255);
+
+   opacity: 0.3;
+
+   text-align: center;
+
+}
+@media screen and (min-width: 576px){
+    nav{
+
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        gap: 600px;
+    
+        width: 100%;
+    
+        height: 100px;
+    
+        background: #111;
+    
+    }
+    .log{
+        width: 20%;
+        height: 100%;
+    }
+    nav .logo{
+    
+        font-size: 2rem;
+    
+        background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%),
+    
+         hsl(239, 69%, 51%));
+    
+        -webkit-background-clip: text;
+    
+        -webkit-text-fill-color: transparent;
+    
+    }
+    
+    ul {
+    
+        text-transform: uppercase;
+    
+    }
+    
+    nav ul{
+    
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        gap: 0 35px;
+    
+        font-size: 1.2rem;
+    
+        
+    
+    }
+    
+    nav a{
+    
+        background: -webkit-linear-gradient(120deg, hsl(187, 96%, 51%),
+    
+        hsl(340, 100%, 44%));
+    
+        -webkit-background-clip: text;
+    
+        -webkit-text-fill-color: transparent;
+    
+        text-decoration: none;
+    
+    }
+    
+    nav a:hover{
+    
+        border-bottom: 2px solid hsl(357, 96%, 47%);
+    
+    }
+    .lista{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 25px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .lista select{
+        background-color: aqua;
+    }
+    
+    .ax{
+        border-radius: 25px;
+        width: 82%;
+        height: 76%;
+        box-shadow: 0px 0px 30px #0caeee;  
+        transition: .9s;
+        margin: 50px;
+        padding: 0.5em;
+        cursor: pointer;
+    }
+    .auto{
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
+        padding: 50px;
+    }
+    .auto2{
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
+        padding: 50px;
+    }
+    .auto3{
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
+        padding: 50px;
+    }
+    .auto4{
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(150px, 1fr)
+        );
+        gap: 32px;
+        padding: 50px;
+    }
+    .ax:hover{
+        transform: scale(1.2);
+    }
+    footer{
+    
+        width: 100%;
+    
+        position: flex;
+    
+        bottom: 0;
+    
+        left: 0;
+    
+        padding: 0.5rem 8%;
+    
+        background: #0e0e0e;
+    
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        flex-direction: column;
+       
+    
+    }
+    a{
+       text-decoration: none;
+       color: rgb(235, 252, 5);
+    }
+    .iconos, .menu{
+    
+       display: flex;
+    
+       justify-content: center;
+    
+       align-items: center;
+    
+       flex-wrap: wrap;
+    
+       margin-bottom: 1rem;
+    
+      
+    }
+    .menu{
+    
+       list-style-type: none;
+    
+       font-size: 18px;
+       
+    
+    }
+    
+    .menu-item{
+    
+       margin: 1rem 1.5rem;
+    
+       cursor: pointer;
+    
+       opacity: 0.6;
+       
+    
+    }
+    
+    .menu-item:hover{
+    
+       opacity: 1;
+    
+    }
+    
+    .copy{
+    
+       color: white;
+    
+       opacity: 0.3;
+    
+       text-align: center;
+    
+    }
+    
+
+}

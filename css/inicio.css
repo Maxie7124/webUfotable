@@ -1,0 +1,549 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: system-ui;  
+
+}
+body{
+    
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    position: relative;
+
+    background-color: #0e0e0e
+    
+}
+nav a:hover{
+    background-color: rgb(76, 0, 255);
+    
+}
+.log{
+    text-align: center;
+    padding: 12px 0;
+}
+ul{
+    background-color: #0e0e0e;
+}
+
+nav a{
+    display: block;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav ul{
+    gap: 0 35px;
+
+    font-size: 1rem;
+}
+
+
+.banner{
+    
+    position: relative;
+
+    width: 100%;
+
+    height: calc(100vh - 0px);
+
+    background-color: #f5f5f5;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: all .1s ease-in-out;
+
+    animation: banner 28s infinite linear;
+
+
+
+}
+
+.banner-content{
+
+    margin: 0;
+
+    padding: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    color: #fff;
+
+    background: rgb(0, 22, 40, .6);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.banner-content h1{
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-bottom: 30px;
+
+    font-size: 40px;
+
+    text-align: center;
+
+}
+
+.banner-content a{
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 9px 20px;
+
+    border: 1px solid #fff;
+
+    text-transform: uppercase;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.banner-content a:hover{
+
+    background-color: #fff;
+
+    color: #333;
+
+}
+
+@keyframes banner{
+
+    0%{
+
+        background-image: url(../imagenes/kimetsu\ cel.png);
+
+    }
+
+    25%{
+
+        background-image: url(../imagenes/kimetsu\ cel.png);
+
+    }
+
+    26%{
+
+        background-image: url(../imagenes/genshin.png);
+
+    }
+
+    50%{
+
+        background-image: url(../imagenes/genshin.png);
+
+    }
+
+    51%{
+
+        background-image: url(../imagenes/kara\ cel.jpg);
+
+    }
+
+    75%{
+
+        background-image: url(../imagenes/kara\ cel.jpg);
+
+    }
+
+    76%{
+
+        background-image: url(../imagenes/fate\ cel.jpg);
+
+    }
+
+    100%{
+
+        background-image: url(../imagenes/fate\ cel.jpg);
+
+    }
+
+}
+footer{
+    
+    width: 100%;
+
+    position: flex;
+
+    bottom: 0;
+
+    left: 0;
+
+    padding: 0.5rem 8%;
+
+    background: #0e0e0e;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+   
+
+}
+a{
+   text-decoration: none;
+   color: rgb(233, 13, 159);
+}
+.iconos, .menu{
+
+   display: flex;
+
+   justify-content: center;
+
+   align-items: center;
+
+   flex-wrap: wrap;
+
+   margin-bottom: 1rem;
+
+  
+}
+.menu{
+
+   list-style-type: none;
+
+   font-size: 15px;
+   
+
+}
+
+.menu-item{
+
+   margin: 1rem 1.5rem;
+
+   cursor: pointer;
+
+   opacity: 0.6;
+   
+
+}
+.logo{
+    width: 220px;
+}
+
+.menu-item:hover{
+
+   opacity: 1;
+
+}
+
+.copy{
+
+   color: rgb(255, 255, 255);
+
+   opacity: 0.3;
+
+   text-align: center;
+
+}
+@media screen and (min-width: 576px){
+    
+    nav{
+
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        gap: 600px;
+    
+        width: 100%;
+    
+        height: 100px;
+    
+        background: #111;
+    
+    }
+    .logo{
+        width: 15%;
+        height: 1%;
+    }
+    ul {
+    
+        text-transform: uppercase;
+    
+    }
+    
+    nav ul{
+    
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        gap: 0 35px;
+    
+        font-size: 1.2rem;
+    
+        
+    
+    }
+    
+    nav a{
+    
+        background: -webkit-linear-gradient(120deg, hsl(187, 96%, 51%),
+    
+        hsl(340, 100%, 44%));
+    
+        -webkit-background-clip: text;
+    
+        -webkit-text-fill-color: transparent;
+    
+        text-decoration: none;
+    
+    }
+    
+    nav a:hover{
+    
+        border-bottom: 2px solid hsl(357, 96%, 47%);
+    
+    }
+    
+    .banner{
+    
+        position: relative;
+    
+        width: 100%;
+    
+        height: calc(100vh - 0px);
+    
+        background-color: #f5f5f5;
+    
+        background-size: cover;
+    
+        background-position: center;
+    
+        transition: all .1s ease-in-out;
+    
+        background-image: url(../img/05b21455-inteligencia-emocional.jpg);
+    
+        animation: banner 28s infinite linear;
+    
+    
+    
+    }
+    
+    .banner-content{
+    
+        margin: 0;
+    
+        padding: 0;
+    
+        width: 100%;
+    
+        height: 100%;
+    
+        color: #fff;
+    
+        background: rgb(0, 22, 40, .6);
+    
+        display: flex;
+    
+        flex-direction: column;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+    }
+    
+    .banner-content h1{
+    
+        margin: 0;
+    
+        padding: 0;
+    
+        padding-bottom: 30px;
+    
+        font-size: 40px;
+    
+        text-align: center;
+    
+    }
+    
+    .banner-content a{
+    
+        text-decoration: none;
+    
+        color: white;
+    
+        padding: 9px 20px;
+    
+        border: 1px solid #fff;
+    
+        text-transform: uppercase;
+    
+        transition: all .3s ease-in-out;
+    
+    }
+    
+    .banner-content a:hover{
+    
+        background-color: #fff;
+    
+        color: #333;
+    
+    }
+    
+    @keyframes banner{
+    
+        0%{
+    
+            background-image: url(../imagenes/fate1.jpg);
+    
+        }
+    
+        25%{
+    
+            background-image: url(../imagenes/fate1.jpg);
+    
+        }
+    
+        26%{
+    
+            background-image: url(../imagenes/genshin.png);
+    
+        }
+    
+        50%{
+    
+            background-image: url(../imagenes/genshin.png);
+    
+        }
+    
+        51%{
+    
+            background-image: url(../imagenes/kara1.png);
+    
+        }
+    
+        75%{
+    
+            background-image: url(../imagenes/kara1.png);
+    
+        }
+    
+        76%{
+    
+            background-image: url(../imagenes/kimetsu3.jpg);
+    
+        }
+    
+        100%{
+    
+            background-image: url(../imagenes/kimetsu3.jpg);
+    
+        }
+    
+    }
+    
+    footer{
+    
+         width: 100%;
+    
+         position: flex;
+    
+         bottom: 0;
+    
+         left: 0;
+    
+         padding: 0.5rem 8%;
+    
+         background: #0e0e0e;
+    
+         display: flex;
+    
+         justify-content: center;
+    
+         align-items: center;
+    
+         flex-direction: column;
+        
+    
+    }
+    a{
+        text-decoration: none;
+        color: rgb(235, 252, 5);
+    }
+    .iconos, .menu{
+    
+        display: flex;
+    
+        justify-content: center;
+    
+        align-items: center;
+    
+        flex-wrap: wrap;
+    
+        margin-bottom: 1rem;
+    
+       
+    }
+    .menu{
+    
+        list-style-type: none;
+    
+        font-size: 18px;
+        
+    
+    }
+    
+    .menu-item{
+    
+        margin: 1rem 1.5rem;
+    
+        cursor: pointer;
+    
+        opacity: 0.6;
+        
+    
+    }
+    
+    .menu-item:hover{
+    
+        opacity: 1;
+    
+    }
+    
+    .copy{
+    
+        color: white;
+    
+        opacity: 0.3;
+    
+        text-align: center;
+    
+    }
+    
+
+}
